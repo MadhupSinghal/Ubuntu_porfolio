@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body style="overflow: hidden">
+    <div style="overflow: scroll">
+      <header class="header">
+        <!-- Div for radio button -->
+        <div class="fontClassRadio">
+          <label for="dancingScript"
+            ><input type="radio" value="Dancing Script" name="lang" />Dancing
+            Script</label
+          >
+          <label for="NotoAmerican"
+            ><input type="radio" value="Noto Sans Armenian" name="lang" />Noto
+            Sans Armenian</label
+          >
+          <label for="Bungee">
+            <input type="radio" value="Bungee Tint" name="lang" />Bungee
+            Tint</label
+          >
+        </div>
+        <!-- Div for Select comboBox-->
+        <div class="fontClass">
+          <label for="fonts" class="fontLable"
+            >Choose Your preferred fonts</label
+          >
+          <select name="fonts" id="fonts" style="border-radius: 20px">
+            <option value="Dancing Script" id="dancingScript">
+              Dancing Script
+            </option>
+            <option value="Noto Sans Armenian" id="NotoAmerican">
+              Noto Sans Armenian
+            </option>
+            <option value="Bungee Tint" id="Bungee">Bungee Tint</option>
+          </select>
+        </div>
+        <div id="contactId" , class="contact-class">
+          <button id="contactBtn" class="contactBtncls">Contact Me</button>
+        </div>
+      </header>
+
+      <div class="main_flexBox">
+        <header class="container">
+          <div class="staticDiv">
+            <h1 class="name">
+              <a href="#">MADHUP SINGHAL</a>
+            </h1>
+            <h2 class="designation">Quality Assurance Engineer</h2>
+            <p class="summary-about">
+              I test web applications and make sure the performace and non
+              interrupted operations.
+            </p>
+            <nav class="navigation-class">
+              <ul class="nav-links">
+                <li class="about-li">
+                  <a href="#about">
+                    <span class="about--Span">----</span>
+                    <span class="aboutSpan">About</span>
+                  </a>
+                </li>
+                <li class="Projects">
+                  <a href="#projects">
+                    <span class="pro-Span">----</span>
+                    <span class="proSpan">Projects</span>
+                  </a>
+                </li>
+                <li class="experiences">
+                  <a href="#experience">
+                    <span class="exp--span">----</span>
+                    <span class="expSapn">Experiences</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social_media">
+              <!-- Add font awesome icons -->
+              <a
+                href="mailto:madhupsinghal@gmail.com"
+                class="fa fa-envelope"
+                id="social"
+              ></a
+              ><span> </span>
+              <a
+                href="https://www.linkedin.com/in/madhup-singhal-64b163162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEpF09JU0RemEORIVhx80mw%3D%3D"
+                class="fa fa-linkedin"
+                id="social"
+              ></a>
+            </div>
+          </div>
+        </header>
+        <header class="container">
+          <section class="content-class">
+            <div>
+              <p>
+                Welcome to my portfolio!<br />
+                I am a Quality Assurance Engineer specializing in embedded
+                software systems with 3 years of experience. My focus lies in
+                ensuring the seamless integration of software, performing
+                rigorous testing, and building reliable, high-performance
+                systems through both manual and automation testing.
+              </p>
+              <p>
+                I am passionate about delivering high-quality software
+                solutions, with a strong foundation in software quality
+                assurance. Over the years, I have developed a solid
+                understanding of C# unit testing, and automation workflows to
+                improve software reliability
+              </p>
+            </div>
+            <!--Project Section-->
+            <div class="container-proj" id="projects">
+              <a class="project-card" href="https://www.google.com">
+                <div style="height: 40%">
+                  <img src="Sources/selenium.png" alt="" class="card-images" />
+                </div>
+                <div style="height: 10%">
+                  <h2 class="card-title">Selenium Testing</h2>
+                </div>
+                <div style="height: 30%">
+                  <p class="card-desc">
+                    HMI Testing using Selenium and pywinauto (Python), which
+                    execute test cases automatically when new build came
+                  </p>
+                </div>
+              </a>
+
+              <a class="project-card" href="Postman.html">
+                <div style="height: 40%">
+                  <img src="Sources/postman.png" alt="" class="card-images" />
+                </div>
+                <div style="height: 10%">
+                  <h2 class="card-title">Postman API Testing</h2>
+                </div>
+                <div style="height: 30%">
+                  <p class="card-desc">Test API using postman</p>
+                </div>
+              </a>
+            </div>
+            <div class="experienceCard" id="experience">
+              <a href="" class="exp1">
+                <div class="expDate">
+                  <h6>2021-Present</h6>
+                </div>
+                <div class="expDetails">
+                  <h3>
+                    Associate software Engineer,Testing. Caterpillar India Pvt
+                    Ltd.
+                  </h3>
+                  <p>
+                    Performed manual and Automation testing for web applications
+                    including smoke, regression and exploratory Testing
+                  </p>
+                  <div class="skills">
+                    <li><a href="https://www.selenium.dev/">Python</a></li>
+                    <li><a href="">Selenium</a></li>
+                    <li><a href="">Pywinauto</a></li>
+
+                    <li><a href="">Postman</a></li>
+                  </div>
+                  <ul></ul>
+                </div>
+              </a>
+            </div>
+          </section>
+        </header>
+      </div>
+
+      <form action="" id="contactForm">
+        <div id="contactPopup" class="popup">
+          <span id="close">&times;</span>
+          <!-- <form id="formId"> -->
+          <h2 class="formh2">Contact Me</h2>
+          <div class="full-input">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              required
+            />
+          </div>
+          <div class="full-input">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Your mail-id.."
+              required
+            />
+          </div>
+          <div class="full-input">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Write Something...."
+            ></textarea>
+          </div>
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+      </form>
+      <script src="Controls/main.js"></script>
+    </div>
+  </body>
+</html>
