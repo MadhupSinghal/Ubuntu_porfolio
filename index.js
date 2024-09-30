@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
-express.application / x - www - form - bodyParser.urlencoded;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/contact", (req, res) => {
