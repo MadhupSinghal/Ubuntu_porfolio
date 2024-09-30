@@ -1,7 +1,17 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+const port = 3000;
 
-app.get("/", function (req, res) {
-  res.render("index.html");
+express.application / x - www - form - bodyParser.urlencoded;
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post("/contact", (req, res) => {
+  const { name, email, message } = req.body;
+  console.log("Name:${name}, Email:${email},Message:${message}");
+  res.send("Form received");
 });
-app.listen(3000);
+
+app.listen(port, () => {
+  console.log("server running on port ${port}");
+});
